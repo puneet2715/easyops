@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./main.css" rel="stylesheet" />
+    <script defer src="./main.js"></script>
+    <title>Easy OPS</title>
+  </head>
+  <body class="min-h-screen bg-gray-100">
+    <main class="flex flex-col items-center justify-center mt-36">
+      <form id="contact-form" class="flex flex-col gap-4 w-full p-4 max-w-lg">
+        <p id="error-text" class="text-red-700"></p>
+        <label class="font-medium text-lg" for="firstName">Person's Name</label>
+        <div class="flex gap-4">
+          <input
+            class="px-4 py-3 outline-none w-full rounded-md shadow-sm border border-gray-300"
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+          />
+          <input
+            class="px-4 py-2 outline-none w-full rounded-md shadow-sm border border-gray-300"
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+          />
+        </div>
+        <label class="font-medium text-lg" for="firstName"
+          >Contact Number</label
+        >
+        <input
+          class="px-4 py-2 outline-none w-full rounded-md shadow-sm border border-gray-300"
+          type="tel"
+          name="phone"
+        />
+        <button
+          class="p-3 bg-green-500 font-semibold text-lg hover:bg-green-600 transition-colors duration-200 rounded-md"
+          type="submit"
+        >
+          Save
+        </button>
+      </form>
+      <section class="flex flex-col w-full max-w-3xl p-4">
+        <input
+          class="border p-3 outline-none rounded-md shadow-sm border-gray-300"
+          type="text"
+          placeholder="Enter Name or Phone Number"
+          id="search-input"
+        />
+        <div class="my-2"></div>
+        <table class="text-center border" id="contacts-table">
+          <thead>
+            <tr class="bg-gray-400">
+              <th class="p-3">S. No.</th>
+              <th
+                id="name-header-btn"
+                class="p-3 hover:cursor-pointer select-none"
+              >
+                Name
+              </th>
+              <th class="p-3">Contact</th>
+              <th class="p-3">Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
