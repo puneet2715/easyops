@@ -229,6 +229,7 @@ form.addEventListener("submit", async (e) => {
 
     addContactToHtml(contact);
     setDeleteButtonListeners();
+    form.reset();
   } catch (error) {
     errorText.innerText = "Please enter unique name and phone number";
     console.log("Error adding contact", error);
