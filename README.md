@@ -1,6 +1,6 @@
 # Contact List
 
-## Assignemnt Description
+## Assignment Description
  - Code a website that shows a form to add a contact and number in a list.
  - The list also has a delete action button. 
  - There should be a search bar, searchable items are -> name and contact number.
